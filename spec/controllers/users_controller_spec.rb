@@ -21,5 +21,10 @@ RSpec.describe UsersController, type: :request do
       get '/users/'
       expect(response.body).to include('Here is the details of a given user')
     end
+
+    it ' the response body includes correct placeholder text' do
+      get '/users/:id'
+      expect(response.body).to include('Here is a list for all users')
+    end
   end
 end
