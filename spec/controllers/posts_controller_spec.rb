@@ -21,5 +21,10 @@ RSpec.describe PostsController, type: :request do
       get '/users/:id/posts'
       expect(response.body).to include('Here is a list of posts for a given user')
     end
+
+    it ' the response body includes correct placeholder text' do
+      get '/users/:id/posts/:id'
+      expect(response.body).to include('Here is the selected post for a given user')
+    end
   end
 end
