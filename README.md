@@ -15,20 +15,17 @@
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
@@ -36,6 +33,10 @@
 # 📖 Project Name
 
 ## Blog App using Rails
+
+## About this project
+
+This is a Blogging App built with `Rails` framework to let users login, add posts, see others posts, comment or like.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -47,17 +48,13 @@
 
 > Key features of the application.
 
-- A full stack blogging app where users can login to add posts, see others posts, comment or like.
+- A full stack blogging app where users can login.
+- Users can add posts, see others posts, comment or like.
+- Users will be able to authenticate their accounts.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-Live demo is currently unavailable.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
@@ -100,11 +97,15 @@ $ bundle install (install dependencies)
 
 $ rails server
 ```
-### Usage
+### Usage <a href="usage" name="usage"></a>
 
 This website is applicable for both mobile and desktop version.
 
-### Deployment
+### Run Test <a href="run-test" name="run-tests"></a>
+
+```
+$ rspec
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
