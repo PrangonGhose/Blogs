@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Main Page', type: :feature do 
+RSpec.describe 'Main Page', type: :feature do
   let!(:user1) do
     User.create(
       name: 'Gio',
