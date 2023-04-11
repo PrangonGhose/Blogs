@@ -1,6 +1,7 @@
 <div class="posts-container post-and-comments">
   <div class="full-post">
-    <h4>Post #<%= @post.id %> by <%= @user.name %></h4>
+    <h4>Post #<%= @post.id %></h4>
+    <h3>Title #<%= @post.title %> by <%= @user.name %></h3>
     <p class='post-counters'>Comments <%= @post.comments_counter %>, Likes <%= @post.likes_counter %></p>
     <p class='post-text'><%= @post.text %></p>
     <%= form_with model: Like.new, url: user_post_likes_path(@user, @post) do |form| %>

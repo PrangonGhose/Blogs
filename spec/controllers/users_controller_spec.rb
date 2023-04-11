@@ -2,6 +2,15 @@ require 'rails_helper'
 
 RSpec.describe UsersController, type: :request do
   describe 'Get id' do
+    let!(:user1) do
+      User.create(
+        name: 'Gio',
+        photo: 'https://www.bing.com/th?id=ODL.c83b34c2350e6cd3a1010f7d1998cfa8&w=143&h=198&c=12&rs=1&qlt=99&pcl=faf9f7&o=6&pid=13.1',
+        bio: 'CTO',
+        posts_counter: 0
+      )
+    end
+
     it 'returns a successful response' do
       get users_path
       expect(response).to be_successful
@@ -13,18 +22,8 @@ RSpec.describe UsersController, type: :request do
     end
 
     it 'renders template show' do
-      get '/users/:id'
+      get "/users/#{user1.id}"
       expect(response).to render_template(:show)
-    end
-
-    it ' the response body includes correct placeholder text' do
-      get '/users/'
-      expect(response.body).to include('Here is the details of a given user')
-    end
-
-    it ' the response body includes correct placeholder text' do
-      get '/users/:id'
-      expect(response.body).to include('Here is a list for all users')
     end
   end
 end
