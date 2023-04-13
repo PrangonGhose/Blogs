@@ -118,6 +118,11 @@ $ rspec
 - GitHub: [@PrangonGhose](https://github.com/PrangonGhose)
 - LinkedIn: [Prangon Ghose](https://www.linkedin.com/in/prangon-ghose/)
 
+👤 **Giovanni Juliao**
+
+- GitHub: [@PrangonGhose](https://github.com/gjuliao)
+- LinkedIn: [Prangon Ghose](https://www.linkedin.com/in/giovanni-juliao/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
