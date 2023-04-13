@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # Assuming you have not yet modified this file, each configuration option below
 # is set to its default value. Note that some are commented out while others
 # are not: uncommented lines are intended to protect your configuration from
@@ -14,7 +12,7 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = 'a4c4b0dd5747647bff1f1bc1d3ae7f3f4b8636d025e34327bb02242ec01a27fcad6b44eeae0bb1a55255a969bdaaf2ca542abad0c1301144eb6f48dfe8a33574'
+  # config.secret_key = 'a4c4b0dd5747647bff1f1bc1d3ae7f3f4b8636d025e34327bb02242ec01a27fcad6b44eeae0bb1a55255a969bdaaf2ca542abad0c1301144eb6f48dfe8a33574' rubocop:disable Layout/LineLength
 
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
