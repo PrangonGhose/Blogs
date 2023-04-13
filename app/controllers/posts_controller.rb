@@ -31,4 +31,12 @@ class PostsController < ApplicationController
   def post_params
     params.require(:post).permit(:title, :text)
   end
+
+  def destroy
+    @user = User.find(params[:user_id])
+    @post = @user.posts.find(params[:id])
+    authorize! :destroy, @post
+    @post.destroy
+    redirect_to user_posts_path(@user)
+  end
 end
