@@ -7,6 +7,9 @@
     <%= form_with model: Like.new, url: user_post_likes_path(@user, @post) do |form| %>
       <% form.submit :Like %>
     <% end %>
+    <% if can? :destroy, @post %>
+      <%= button_to "Delete Post", user_post_path(@user, @post), method: :delete, data: { confirm: "Are you sure?" } %>
+    <% end %>
   </div>
   <%= link_to new_user_post_comment_path(@user, @post) do %>
   <button>New Comment</button>
@@ -15,6 +18,9 @@
     <div class="comments">
         <% @post.comments.each do |comment| %>
           <p><%= comment.author.name %>: <%= comment.text %></p>
+          <% if can? :destroy, comment %>
+            <%= button_to "Delete Comment", user_post_comment_path(@user, @post, comment), method: :delete, data: { confirm: "Are you sure?" } %>
+          <% end %>
         <% end %>
     </div>
   <% end %>
